@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>考核規則 | MJ Clan</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <div id="tsparticles"></div>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="IMG_3083.png" alt="MJ Clan Logo" style="height: 32px; width: auto;">
+                MJ Clan
+            </a>
+            <button class="mobile-menu-btn">
+                <i data-lucide="menu"></i>
+            </button>
+            <div class="nav-links">
+                <a href="index.html">首頁</a>
+                <a href="assessment.html">考核</a>
+                <a href="system.html">系統</a>
+                <a href="partnership.html">合作</a>
+                <a href="https://discord.gg/nswjg7DrZT" class="nav-cta">加入 Discord</a>
+            </div>
+        </div>
+    </nav>
+
+    <main style="padding-top: 120px;">
+        <section class="container">
+            <h2 class="section-title">考核與晉升</h2>
+            <div class="level-container">
+                <div class="level-card">
+                    <h4>Level 01</h4>
+                    <h3>一級成員</h3>
+                    <p style="margin-top: 16px;">基礎實力驗證</p>
+                    <ul style="margin-top: 24px; list-style: none; color: var(--text-gray); font-size: 15px;">
+                        <li>• 考核要求：領先 3 分以上</li>
+                        <li>• 實力門檻：具備基礎對戰能力</li>
+                    </ul>
+                </div>
+                <div class="level-card" style="border-color: rgba(255,255,255,0.2);">
+                    <h4>Level 02</h4>
+                    <h3>二級成員</h3>
+                    <p style="margin-top: 16px;">中堅戰力驗收</p>
+                    <ul style="margin-top: 24px; list-style: none; color: var(--text-gray); font-size: 15px;">
+                        <li>• 考核要求：領先 5 分以上</li>
+                        <li>• 實力門檻：需經考官實力驗證</li>
+                    </ul>
+                </div>
+                <div class="level-card" style="border-color: var(--primary-red); background: rgba(255, 59, 48, 0.05);">
+                    <h4>Elite</h4>
+                    <h3>菁英成員</h3>
+                    <p style="margin-top: 16px;">巔峰實力證明</p>
+                    <ul style="margin-top: 24px; list-style: none; color: var(--text-gray); font-size: 15px;">
+                        <li>• 報考前提：需通過一、二級考核</li>
+                        <li>• 考核要求：獲勝且領先 3 分以上</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="container" style="padding: 100px 0;">
+            <h2 class="section-title">指定考核配置</h2>
+            <div class="bento-grid" style="grid-auto-rows: auto;">
+                <div class="bento-item" style="padding: 40px;">
+                    <h3 style="color: var(--primary-red); font-size: 20px;">DL 項目</h3>
+                    <p>限用新手武器，考驗最純粹的槍法與基礎觀念。</p>
+                </div>
+                <div class="bento-item" style="padding: 40px;">
+                    <h3 style="color: var(--primary-red); font-size: 20px;">SCL 項目</h3>
+                    <p>狙擊槍 + 自訂武器 (禁傷)，測試極限反應與切槍節奏。</p>
+                </div>
+                <div class="bento-item" style="padding: 40px;">
+                    <h3 style="color: var(--primary-red); font-size: 20px;">KNIFE 項目</h3>
+                    <p>弓箭 / 飛刀 / 小刀 / 號角，全方位身法考驗。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="container" style="padding-bottom: 120px;">
+            <div class="bento-item bento-medium" style="background: #111; border: 1px solid #333;">
+                <h3>考核守則</h3>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 32px; margin-top: 32px;">
+                    <div>
+                        <h4 style="color: white; margin-bottom: 8px;">01. 資料提交</h4>
+                        <p style="font-size: 14px;">開單後請立即發送個人檔案截圖。</p>
+                    </div>
+                    <div>
+                        <h4 style="color: white; margin-bottom: 8px;">02. 禁止沉默</h4>
+                        <p style="font-size: 14px;">無故不說話者將禁考 2 週。</p>
+                    </div>
+                    <div>
+                        <h4 style="color: white; margin-bottom: 8px;">03. 禁止刷單</h4>
+                        <p style="font-size: 14px;">請勿重複開啟單據維持秩序。</p>
+                    </div>
+                    <div>
+                        <h4 style="color: white; margin-bottom: 8px;">04. 嚴禁催促</h4>
+                        <p style="font-size: 14px;">考官皆為業餘時間處理，請耐心等待。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="copyright">&copy; 2026 MJ Clan. Professionalism in Gaming.</p>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+
+        // Mobile Menu Toggle
+        const mobileBtn = document.querySelector('.mobile-menu-btn');
+        const navLinks = document.querySelector('.nav-links');
+        if (mobileBtn) {
+                mobileBtn.addEventListener('click', () => {
+                    navLinks.classList.toggle('active');
+                });
+            }
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
+        <script>
+            tsParticles.load("tsparticles", {
+                fpsLimit: 60,
+                particles: {
+                    color: { value: "#ff2d55" },
+                    links: { color: "#ff3b30", distance: 120, enable: true, opacity: 0.15, width: 1 },
+                    move: { enable: true, speed: 1, direction: "none", random: true, straight: false, outModes: "out" },
+                    number: { density: { enable: true, area: 800 }, value: 60 },
+                    opacity: { value: 0.3 },
+                    shape: { type: "circle" },
+                    size: { value: { min: 1, max: 2 } }
+                },
+                detectRetina: true
+            });
+        </script>
+    </body>
+</html>

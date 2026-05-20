@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MJ Clan | 頂尖電競戰隊</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <div id="tsparticles"></div>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="IMG_3083.png" alt="MJ Clan Logo" style="height: 32px; width: auto;">
+                MJ Clan
+            </a>
+            <button class="mobile-menu-btn">
+                <i data-lucide="menu"></i>
+            </button>
+            <div class="nav-links">
+                <a href="index.html">首頁</a>
+                <a href="assessment.html">考核</a>
+                <a href="system.html">系統</a>
+                <a href="partnership.html">合作</a>
+                <a href="https://discord.gg/nswjg7DrZT" class="nav-cta">加入 Discord</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <img src="IMG_3083.png" alt="MJ Clan Large Logo" style="width: 180px; height: auto; margin-bottom: 40px; filter: drop-shadow(0 0 20px rgba(255,255,255,0.2));">
+                <div class="hero-tag">EST. 2026</div>
+                <h1 class="hero-title">
+                    <span>超越極限</span>
+                    <span class="red-text">定義強大</span>
+                </h1>
+                <p class="hero-subtitle">MJ Clan 戰隊官網 —— 專業考核、頂尖賽事、熱血社群。</p>
+                <div class="hero-btns">
+                    <a href="assessment.html" class="btn btn-main">開始考核</a>
+                    <a href="#features" class="btn btn-red">了解更多 <i data-lucide="chevron-right"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="container">
+            <h2 class="section-title">戰隊特色</h2>
+            <div class="bento-grid">
+                <div class="bento-item bento-large card-featured">
+                    <i data-lucide="shield-check" class="icon"></i>
+                    <h3>專業考核體系</h3>
+                    <p>我們提供 DL、SDL 以及專屬的小刀考核。透過嚴謹的分級制度，精準定位你的實力水準。</p>
+                </div>
+                <div class="bento-item">
+                    <i data-lucide="award" class="icon"></i>
+                    <h3>實力分級</h3>
+                    <p>即時反應技術強度，讓你的榮譽與實力並行。</p>
+                </div>
+                <div class="bento-item">
+                    <i data-lucide="user-plus" class="icon"></i>
+                    <h3>彈性改名</h3>
+                    <p>尊重成員個性，展現獨一無二的戰場姿態。</p>
+                </div>
+                <div class="bento-item bento-medium">
+                    <i data-lucide="swords" class="icon"></i>
+                    <h3>頂尖戰隊賽事</h3>
+                    <p>不定期與各大頂尖戰隊進行友誼賽，在火線中磨練技術。</p>
+                </div>
+                <div class="bento-item">
+                    <i data-lucide="shield-alert" class="icon"></i>
+                    <h3>專業管理</h3>
+                    <p>全天候維護和諧環境，專注於純粹的競技體驗。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="container" style="padding-bottom: 120px; text-align: center;">
+            <h2 class="section-title">加入我們</h2>
+            <div class="bento-item bento-medium" style="margin: 0 auto; background: linear-gradient(135deg, #1c1c1e 0%, #ff3b3022 100%);">
+                <div class="card-content" style="text-align: center; width: 100%;">
+                    <h3>準備好成為傳奇了嗎？</h3>
+                    <p style="margin-bottom: 32px;">立即加入 Discord 開啟你的電競之旅。</p>
+                    <a href="https://discord.gg/nswjg7DrZT" class="btn btn-red">加入 Discord <i data-lucide="external-link"></i></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-links">
+                <a href="index.html">首頁</a>
+                <a href="assessment.html">考核規則</a>
+                <a href="system.html">系統介紹</a>
+                <a href="partnership.html">合作規範</a>
+            </div>
+            <p class="copyright">&copy; 2026 MJ Clan. Designed for Excellence.</p>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) entry.target.classList.add('visible');
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.bento-item, .section-title').forEach(el => {
+            el.classList.add('reveal');
+            observer.observe(el);
+        });
+
+        // Mobile Menu Toggle
+        const mobileBtn = document.querySelector('.mobile-menu-btn');
+        const navLinks = document.querySelector('.nav-links');
+        if (mobileBtn) {
+                mobileBtn.addEventListener('click', () => {
+                    navLinks.classList.toggle('active');
+                });
+            }
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
+        <script>
+            tsParticles.load("tsparticles", {
+                fpsLimit: 60,
+                particles: {
+                    color: { value: "#ff2d55" },
+                    links: { color: "#ff3b30", distance: 120, enable: true, opacity: 0.15, width: 1 },
+                    move: { enable: true, speed: 1, direction: "none", random: true, straight: false, outModes: "out" },
+                    number: { density: { enable: true, area: 800 }, value: 60 },
+                    opacity: { value: 0.3 },
+                    shape: { type: "circle" },
+                    size: { value: { min: 1, max: 2 } }
+                },
+                detectRetina: true
+            });
+        </script>
+    </body>
+</html>

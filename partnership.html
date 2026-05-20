@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>合作規範 | MJ Clan</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <div id="tsparticles"></div>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="IMG_3083.png" alt="MJ Clan Logo" style="height: 32px; width: auto;">
+                MJ Clan
+            </a>
+            <button class="mobile-menu-btn">
+                <i data-lucide="menu"></i>
+            </button>
+            <div class="nav-links">
+                <a href="index.html">首頁</a>
+                <a href="assessment.html">考核</a>
+                <a href="system.html">系統</a>
+                <a href="partnership.html">合作</a>
+                <a href="https://discord.gg/nswjg7DrZT" class="nav-cta">加入 Discord</a>
+            </div>
+        </div>
+    </nav>
+
+    <main style="padding-top: 120px;">
+        <section class="container">
+            <h2 class="section-title">戰隊合作規範</h2>
+            <div class="bento-grid">
+                <div class="bento-item">
+                    <i data-lucide="handshake" class="icon"></i>
+                    <h3>合作原則</h3>
+                    <p>平等互利、相互尊重、誠實守信。我們致力於建立一個健康的競技生態圈。</p>
+                </div>
+                <div class="bento-item bento-medium card-featured">
+                    <i data-lucide="swords" class="icon"></i>
+                    <h3>賽事與約戰</h3>
+                    <p>友誼賽須提前 3 天確認規則與地圖。出賽前 24 小時提交隊員名單，嚴禁聘請外援，維持公平競技精神。</p>
+                </div>
+                <div class="bento-item bento-large">
+                    <i data-lucide="user-x" class="icon"></i>
+                    <h3>挖角與轉會禁令</h3>
+                    <p>嚴禁雙方私下游說或惡性挖角。若成員欲更換戰隊，需依正式程序辦理，並定期同步黑名單以維護社群環境。</p>
+                </div>
+                <div class="bento-item">
+                    <i data-lucide="share-2" class="icon"></i>
+                    <h3>資源共享</h3>
+                    <p>聯名活動須同時展示雙方隊徽，鼓勵隊員間良性互動與技術交流。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="container" style="padding-bottom: 120px; text-align: center;">
+            <div class="bento-item bento-medium" style="margin: 0 auto; background: rgba(255, 59, 48, 0.05); border-color: var(--primary-red);">
+                <div class="card-content" style="text-align: center; width: 100%;">
+                    <h3>尋求合作或聯名？</h3>
+                    <p style="margin-bottom: 32px;">歡迎各大戰隊管理層加入 Discord 洽談。</p>
+                    <a href="https://discord.gg/nswjg7DrZT" class="btn btn-red">連繫管理層</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="copyright">&copy; 2026 MJ Clan. Strategic Partnership.</p>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+
+        // Mobile Menu Toggle
+        const mobileBtn = document.querySelector('.mobile-menu-btn');
+        const navLinks = document.querySelector('.nav-links');
+        if (mobileBtn) {
+                mobileBtn.addEventListener('click', () => {
+                    navLinks.classList.toggle('active');
+                });
+            }
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
+        <script>
+            tsParticles.load("tsparticles", {
+                fpsLimit: 60,
+                particles: {
+                    color: { value: "#ff2d55" },
+                    links: { color: "#ff3b30", distance: 120, enable: true, opacity: 0.15, width: 1 },
+                    move: { enable: true, speed: 1, direction: "none", random: true, straight: false, outModes: "out" },
+                    number: { density: { enable: true, area: 800 }, value: 60 },
+                    opacity: { value: 0.3 },
+                    shape: { type: "circle" },
+                    size: { value: { min: 1, max: 2 } }
+                },
+                detectRetina: true
+            });
+        </script>
+    </body>
+</html>

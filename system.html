@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>系統介紹 | MJ Clan</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <div id="tsparticles"></div>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="IMG_3083.png" alt="MJ Clan Logo" style="height: 32px; width: auto;">
+                MJ Clan
+            </a>
+            <button class="mobile-menu-btn">
+                <i data-lucide="menu"></i>
+            </button>
+            <div class="nav-links">
+                <a href="index.html">首頁</a>
+                <a href="assessment.html">考核</a>
+                <a href="system.html">系統</a>
+                <a href="partnership.html">合作</a>
+                <a href="https://discord.gg/nswjg7DrZT" class="nav-cta">加入 Discord</a>
+            </div>
+        </div>
+    </nav>
+
+    <main style="padding-top: 120px;">
+        <section class="container">
+            <h2 class="section-title">戰隊核心系統</h2>
+            <div class="bento-grid">
+                <div class="bento-item bento-large card-featured">
+                    <i data-lucide="ticket" class="icon"></i>
+                    <h3>自動化開單系統</h3>
+                    <p>我們在 Discord 建立了專業的 Ticket 系統。無論是考核申請還是建議反饋，都能快速獲得管理層的響應。</p>
+                    <ul style="margin-top: 24px; list-style: none; color: var(--text-gray); font-size: 15px;">
+                        <li>• 一鍵開單：系統自動建立私密頻道</li>
+                        <li>• 專業處理：專屬考官與管理員即時接入</li>
+                        <li>• 隱私保障：僅限相關人員可見</li>
+                    </ul>
+                </div>
+                <div class="bento-item">
+                    <i data-lucide="gift" class="icon"></i>
+                    <h3>抽獎回饋</h3>
+                    <p>定期舉辦皮膚箱、通行證抽獎，獎勵每一位活躍成員。</p>
+                </div>
+                <div class="bento-item">
+                    <i data-lucide="users" class="icon"></i>
+                    <h3>成員分級</h3>
+                    <p>精確的 Discord 身份組管理，展示你的戰隊榮譽與職位。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="container" style="padding-bottom: 120px; text-align: center;">
+            <div class="bento-item bento-medium" style="margin: 0 auto; background: rgba(28, 28, 30, 0.5);">
+                <div class="card-content" style="text-align: center; width: 100%;">
+                    <h3>想要親自體驗系統？</h3>
+                    <p style="margin-bottom: 32px;">加入 Discord 即可使用所有自動化功能。</p>
+                    <a href="https://discord.gg/nswjg7DrZT" class="btn btn-red">前往 Discord</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="copyright">&copy; 2026 MJ Clan. Advanced Management.</p>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+
+        // Mobile Menu Toggle
+        const mobileBtn = document.querySelector('.mobile-menu-btn');
+        const navLinks = document.querySelector('.nav-links');
+        if (mobileBtn) {
+                mobileBtn.addEventListener('click', () => {
+                    navLinks.classList.toggle('active');
+                });
+            }
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
+        <script>
+            tsParticles.load("tsparticles", {
+                fpsLimit: 60,
+                particles: {
+                    color: { value: "#ff2d55" },
+                    links: { color: "#ff3b30", distance: 120, enable: true, opacity: 0.15, width: 1 },
+                    move: { enable: true, speed: 1, direction: "none", random: true, straight: false, outModes: "out" },
+                    number: { density: { enable: true, area: 800 }, value: 60 },
+                    opacity: { value: 0.3 },
+                    shape: { type: "circle" },
+                    size: { value: { min: 1, max: 2 } }
+                },
+                detectRetina: true
+            });
+        </script>
+    </body>
+</html>
