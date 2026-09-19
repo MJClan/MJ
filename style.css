@@ -1155,3 +1155,199 @@ body.is-loaded .page-loader {
         transform: translateY(-4px);
     }
 }
+
+
+/* Performance safeguards: keep the glass look while reducing GPU work on weaker devices. */
+html.low-performance body::before,
+html.low-performance body::after {
+    filter: none;
+    opacity: 0.45;
+}
+
+html.low-performance .ambient-background {
+    background: none;
+}
+
+html.low-performance .ambient-grid,
+html.low-performance .ambient-stars,
+html.low-performance .ambient-orb,
+html.low-performance .page-loader__mark,
+html.low-performance .page-loader__line span {
+    animation: none;
+}
+
+html.low-performance .ambient-grid {
+    opacity: 0.08;
+}
+
+html.low-performance .ambient-stars {
+    opacity: 0.18;
+}
+
+html.low-performance .ambient-orb {
+    filter: none;
+    opacity: 0.16;
+    mix-blend-mode: normal;
+}
+
+html.low-performance .glass-card,
+html.low-performance .bento-item,
+html.low-performance .level-card,
+html.low-performance .navbar,
+html.low-performance .nav-links,
+html.low-performance .hero-tag,
+html.low-performance .btn-secondary,
+html.low-performance .page-loader__mark {
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+}
+
+html.low-performance .glass-card,
+html.low-performance .bento-item,
+html.low-performance .level-card {
+    background: rgba(18, 18, 23, 0.9);
+}
+
+html.low-performance .navbar,
+html.low-performance .nav-links {
+    background: rgba(9, 9, 13, 0.94);
+}
+
+html.low-performance [data-tilt] {
+    transform-style: flat;
+    will-change: auto;
+}
+
+html.low-performance [data-tilt]:hover,
+html.low-performance .bento-item:hover,
+html.low-performance .level-card:hover {
+    transform: translateY(-3px);
+}
+
+@media (max-width: 900px), (prefers-reduced-motion: reduce) {
+    .ambient-grid,
+    .ambient-stars,
+    .ambient-orb,
+    .page-loader__mark,
+    .page-loader__line span {
+        animation: none;
+    }
+
+    .ambient-orb {
+        filter: none;
+        opacity: 0.2;
+        mix-blend-mode: normal;
+    }
+
+    .glass-card,
+    .bento-item,
+    .level-card,
+    .navbar,
+    .nav-links,
+    .hero-tag,
+    .btn-secondary,
+    .page-loader__mark {
+        backdrop-filter: none;
+        -webkit-backdrop-filter: none;
+    }
+
+    [data-tilt] {
+        transform-style: flat;
+        will-change: auto;
+    }
+}
+
+@media (max-width: 900px) {
+    body::before,
+    body::after {
+        filter: none;
+        opacity: 0.45;
+    }
+
+    .ambient-grid {
+        opacity: 0.08;
+    }
+
+    .ambient-stars {
+        opacity: 0.2;
+    }
+}
+
+
+/* Balanced mode: effects remain active with lighter GPU settings. */
+html.low-performance:not(.motion-reduced) .ambient-grid {
+    opacity: 0.12;
+    animation: grid-drift 34s linear infinite;
+}
+
+html.low-performance:not(.motion-reduced) .ambient-stars {
+    opacity: 0.24;
+    animation: star-drift 42s ease-in-out infinite alternate;
+}
+
+html.low-performance:not(.motion-reduced) .ambient-orb {
+    filter: blur(8px);
+    opacity: 0.24;
+    mix-blend-mode: screen;
+}
+
+html.low-performance:not(.motion-reduced) .ambient-orb--one {
+    animation: orb-float-one 20s ease-in-out infinite alternate;
+}
+
+html.low-performance:not(.motion-reduced) .ambient-orb--two {
+    animation: orb-float-two 24s ease-in-out infinite alternate;
+}
+
+html.low-performance:not(.motion-reduced) .ambient-orb--three {
+    animation: orb-pulse 14s ease-in-out infinite;
+}
+
+html.low-performance:not(.motion-reduced) .glass-card,
+html.low-performance:not(.motion-reduced) .bento-item,
+html.low-performance:not(.motion-reduced) .level-card,
+html.low-performance:not(.motion-reduced) .navbar,
+html.low-performance:not(.motion-reduced) .nav-links,
+html.low-performance:not(.motion-reduced) .hero-tag,
+html.low-performance:not(.motion-reduced) .btn-secondary,
+html.low-performance:not(.motion-reduced) .page-loader__mark {
+    background: var(--surface);
+    backdrop-filter: blur(12px) saturate(110%);
+    -webkit-backdrop-filter: blur(12px) saturate(110%);
+}
+
+html.low-performance:not(.motion-reduced) .navbar,
+html.low-performance:not(.motion-reduced) .nav-links {
+    background: rgba(9, 9, 13, 0.76);
+}
+
+html.low-performance:not(.motion-reduced) [data-tilt]:hover {
+    transform: perspective(1200px) rotateX(var(--tilt-x)) rotateY(var(--tilt-y)) translateY(-4px);
+}
+
+html.low-performance:not(.motion-reduced) .page-loader__mark {
+    animation: loader-breathe 1.8s ease-in-out infinite alternate;
+}
+
+html.low-performance:not(.motion-reduced) .page-loader__line span {
+    animation: loader-progress 1.7s var(--ease-out) infinite;
+}
+
+html.motion-reduced .ambient-grid,
+html.motion-reduced .ambient-stars,
+html.motion-reduced .ambient-orb,
+html.motion-reduced .page-loader__mark,
+html.motion-reduced .page-loader__line span {
+    animation: none !important;
+}
+
+
+/* Keep every visual effect active in balanced mode, with cheaper rendering settings. */
+html.low-performance:not(.motion-reduced) .ambient-background {
+    background: radial-gradient(circle 300px at var(--pointer-x, 50vw) var(--pointer-y, 32vh), rgba(255, 255, 255, 0.05), transparent 72%);
+}
+
+html.low-performance:not(.motion-reduced) [data-tilt] {
+    transform-style: preserve-3d;
+    will-change: transform;
+}
