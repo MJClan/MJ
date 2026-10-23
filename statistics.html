@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MJ Clan Discord 社群統計資料與伺服器建立時間。">
+    <title>MJ Clan | 統計資料</title>
+    <link rel="icon" type="image/png" href="IMG_3083.png" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+TC:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest" defer></script>
+</head>
+<body>
+    <div class="ambient-background" aria-hidden="true">
+        <span class="ambient-grid"></span>
+        <span class="ambient-stars"></span>
+        <span class="ambient-orb ambient-orb--one"></span>
+        <span class="ambient-orb ambient-orb--two"></span>
+        <span class="ambient-orb ambient-orb--three"></span>
+    </div>
+    <div class="page-loader" aria-label="頁面載入中">
+        <div class="page-loader__inner">
+            <div class="page-loader__mark">MJ</div>
+            <div class="page-loader__line"><span></span></div>
+            <div class="page-loader__label">LOADING EXPERIENCE</div>
+        </div>
+    </div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="IMG_3083.png" alt="MJ Clan Logo" width="960" height="907" decoding="async">
+                MJ Clan
+            </a>
+            <button class="mobile-menu-btn" aria-label="開啟選單" aria-expanded="false">
+                <i data-lucide="menu"></i>
+            </button>
+            <div class="nav-links">
+                <a href="index.html">首頁</a>
+                <a href="assessment.html">考核</a>
+                <a href="system.html">系統</a>
+                <a href="partnership.html">合作</a>
+                <a href="statistics.html" aria-current="page">統計</a>
+                <a href="discordlink.html" class="nav-cta">加入 Discord</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="page-main statistics-page">
+        <section class="container statistics-intro">
+            <p class="page-kicker">MJ CLAN / LIVE COMMUNITY DATA</p>
+            <h1 class="page-title">戰隊統計資料</h1>
+            <p class="page-lead">查看 MJ Clan Discord 社群規模、目前在線狀態，以及伺服器建立至今的累計天數。</p>
+        </section>
+
+        <section class="container statistics-grid" aria-label="MJ Clan 統計數據" aria-live="polite">
+            <article class="glass-card statistics-card statistics-card--members">
+                <div class="statistics-card__icon" aria-hidden="true"><i data-lucide="users"></i></div>
+                <p class="statistics-card__label">DISCORD MEMBERS</p>
+                <strong class="statistics-card__value" id="discord-member-count">—</strong>
+                <p class="statistics-card__caption" id="discord-member-status">正在取得 Discord 資料…</p>
+            </article>
+
+            <article class="glass-card statistics-card">
+                <div class="statistics-card__icon" aria-hidden="true"><i data-lucide="radio"></i></div>
+                <p class="statistics-card__label">ONLINE NOW</p>
+                <strong class="statistics-card__value" id="discord-online-count">—</strong>
+                <p class="statistics-card__caption">目前在線人數（Discord 約略資料）</p>
+            </article>
+
+            <article class="glass-card statistics-card">
+                <div class="statistics-card__icon" aria-hidden="true"><i data-lucide="clock-3"></i></div>
+                <p class="statistics-card__label">SERVER AGE</p>
+                <strong class="statistics-card__value statistics-card__value--compact" id="discord-server-age">—</strong>
+                <p class="statistics-card__caption">Discord 伺服器建立至今（累計天數）</p>
+            </article>
+
+            <article class="glass-card statistics-card">
+                <div class="statistics-card__icon" aria-hidden="true"><i data-lucide="calendar-days"></i></div>
+                <p class="statistics-card__label">ESTABLISHED</p>
+                <strong class="statistics-card__value statistics-card__value--compact" id="discord-created-at">—</strong>
+                <p class="statistics-card__caption">Discord 伺服器建立日期</p>
+            </article>
+        </section>
+
+        <section class="container statistics-detail-grid">
+            <article class="glass-card statistics-panel">
+                <div class="statistics-panel__heading">
+                    <div>
+                        <p class="page-kicker">DATA SOURCE</p>
+                        <h2>資料說明</h2>
+                    </div>
+                    <i data-lucide="database" aria-hidden="true"></i>
+                </div>
+                <p>成員與在線人數由 Discord 公開邀請資料即時取得，數字會隨 Discord 的約略統計更新；如果瀏覽器暫時無法連線，頁面會保留版面並顯示無法取得狀態。</p>
+                <dl class="statistics-list">
+                    <div>
+                        <dt>資料來源</dt>
+                        <dd>Discord 公開邀請 API</dd>
+                    </div>
+                    <div>
+                        <dt>更新狀態</dt>
+                        <dd id="discord-updated-at">尚未更新</dd>
+                    </div>
+                </dl>
+            </article>
+
+            <article class="glass-card statistics-panel statistics-panel--cta">
+                <div class="statistics-panel__heading">
+                    <div>
+                        <p class="page-kicker">JOIN THE COMMUNITY</p>
+                        <h2>加入 MJ Clan</h2>
+                    </div>
+                    <i data-lucide="message-circle" aria-hidden="true"></i>
+                </div>
+                <p>想參與考核、活動或認識更多成員？加入 Discord，直接和 MJ Clan 社群交流。</p>
+                <a class="btn btn-main" href="discordlink.html">前往 Discord <i data-lucide="arrow-up-right"></i></a>
+            </article>
+        </section>
+
+        <section class="container statistics-actions" aria-label="統計資料操作">
+            <p id="statistics-fetch-status">資料會在頁面載入時自動更新。</p>
+            <button type="button" class="btn btn-secondary statistics-refresh" id="statistics-refresh">
+                <i data-lucide="refresh-cw" aria-hidden="true"></i>
+                重新取得資料
+            </button>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-links">
+                <a href="index.html">首頁</a>
+                <a href="assessment.html">考核規則</a>
+                <a href="system.html">系統介紹</a>
+                <a href="partnership.html">合作規範</a>
+                <a href="statistics.html">統計資料</a>
+            </div>
+            <p class="copyright">&copy; 2026 MJ Clan. Community Data Center.</p>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
