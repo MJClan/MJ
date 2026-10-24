@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MJ helper Wiki：功能說明、指令用法、管理員設定、常見問題與更新內容。">
+    <link rel="canonical" href="https://mjclan.github.io/MJ/wiki.html">
+    <title>MJ helper Wiki | MJ Clan</title>
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="MJ Clan">
+    <meta property="og:locale" content="zh_TW">
+    <meta property="og:title" content="MJ helper Wiki | MJ Clan">
+    <meta property="og:description" content="MJ helper 的功能說明、指令用法、伺服器設定與常見問題。">
+    <meta property="og:url" content="https://mjclan.github.io/MJ/wiki.html">
+    <meta property="og:image" content="https://mjclan.github.io/MJ/IMG_3083.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="960">
+    <meta property="og:image:height" content="907">
+    <meta property="og:image:alt" content="MJ Clan Logo">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="MJ helper Wiki | MJ Clan">
+    <meta name="twitter:description" content="MJ helper 的功能說明、指令用法、伺服器設定與常見問題。">
+    <meta name="twitter:image" content="https://mjclan.github.io/MJ/IMG_3083.png">
+    <link rel="icon" type="image/png" href="IMG_3083.png" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+TC:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest" defer></script>
+</head>
+<body>
+    <div class="ambient-background" aria-hidden="true">
+        <span class="ambient-grid"></span>
+        <span class="ambient-stars"></span>
+        <span class="ambient-orb ambient-orb--one"></span>
+        <span class="ambient-orb ambient-orb--two"></span>
+        <span class="ambient-orb ambient-orb--three"></span>
+    </div>
+    <div class="page-loader" aria-label="頁面載入中">
+        <div class="page-loader__inner">
+            <div class="page-loader__mark">MJ</div>
+            <div class="page-loader__line"><span></span></div>
+            <div class="page-loader__label">LOADING EXPERIENCE</div>
+        </div>
+    </div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="IMG_3083.png" alt="MJ Clan Logo" width="960" height="907" decoding="async">
+                MJ Clan
+            </a>
+            <button class="mobile-menu-btn" aria-label="開啟選單" aria-expanded="false">
+                <i data-lucide="menu"></i>
+            </button>
+            <div class="nav-links">
+                <a href="index.html">首頁</a>
+                <a href="assessment.html">考核</a>
+                <a href="system.html">系統</a>
+                <a href="partnership.html">合作</a>
+                <a href="statistics.html">統計</a>
+                <a href="bot.html">機器人</a>
+                <a href="discordlink.html" class="nav-cta">加入 Discord</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="page-main wiki-page">
+        <section class="container wiki-hero">
+            <div class="wiki-hero__icon" aria-hidden="true"><i data-lucide="book-open"></i></div>
+            <p class="page-kicker">MJ HELPER / KNOWLEDGE BASE</p>
+            <h1 class="page-title">MJ helper Wiki</h1>
+            <p class="wiki-hero__subtitle">功能說明、指令用法與伺服器設定</p>
+            <p class="page-lead">這裡是 MJ helper 的使用說明。你可以在這裡找到指令用法、管理員設定、功能介紹、常見問題和更新內容。</p>
+            <div class="wiki-hero__actions">
+                <a class="btn btn-main" href="bot.html">返回 MJ helper <i data-lucide="arrow-left"></i></a>
+                <a class="btn btn-secondary" href="https://discord.com/oauth2/authorize?client_id=1550747467002290276" target="_blank" rel="noopener noreferrer">將 Bot 加入伺服器 <i data-lucide="external-link"></i></a>
+            </div>
+        </section>
+
+        <section class="container wiki-layout">
+            <aside class="glass-card wiki-sidebar" aria-label="Wiki 導覽">
+                <p class="page-kicker">QUICK NAVIGATION</p>
+                <h2>快速導覽</h2>
+                <nav class="wiki-toc">
+                    <a href="#getting-started">新手開始</a>
+                    <a href="#commands">指令總覽</a>
+                    <a href="#music">音樂系統</a>
+                    <a href="#cards">抽卡系統</a>
+                    <a href="#events">活動與抽獎</a>
+                    <a href="#levels">簽到與等級</a>
+                    <a href="#members">成員名單</a>
+                    <a href="#welcome">歡迎與身分組</a>
+                    <a href="#protection">防護功能</a>
+                    <a href="#other">其他功能</a>
+                    <a href="#faq">常見問題</a>
+                </nav>
+            </aside>
+
+            <div class="wiki-content">
+                <section class="glass-card wiki-section wiki-section--intro" id="wiki-home">
+                    <div class="wiki-section__heading">
+                        <div>
+                            <p class="page-kicker">WELCOME</p>
+                            <h2>開始使用 MJ helper</h2>
+                        </div>
+                        <i data-lucide="sparkles" aria-hidden="true"></i>
+                    </div>
+                    <p>如果你是第一次使用，建議先看新手開始、指令總覽、伺服器管理設定與常見問題。</p>
+                    <div class="wiki-quick-grid">
+                        <a href="#getting-started"><i data-lucide="rocket"></i><span>新手開始</span></a>
+                        <a href="#commands"><i data-lucide="terminal"></i><span>指令總覽</span></a>
+                        <a href="#protection"><i data-lucide="shield-check"></i><span>伺服器管理設定</span></a>
+                        <a href="#faq"><i data-lucide="circle-help"></i><span>常見問題</span></a>
+                    </div>
+                    <div class="wiki-command-inline">在 Discord 輸入 <code>/help</code>，也可以直接查看目前可用的功能。</div>
+                </section>
+
+                <section class="glass-card wiki-section" id="about">
+                    <div class="wiki-section__heading">
+                        <div>
+                            <p class="page-kicker">ABOUT THE BOT</p>
+                            <h2>MJ helper 是什麼？</h2>
+                        </div>
+                        <i data-lucide="bot" aria-hidden="true"></i>
+                    </div>
+                    <p>MJ helper 是 MJ Clan 的團長自己製作和維護的 Discord Bot。</p>
+                    <p>它主要用來處理伺服器管理、日常互動和娛樂功能。每個伺服器可以依照自己的需求，開啟或調整不同功能。</p>
+                    <div class="wiki-chip-list">
+                        <span>音樂播放</span><span>抽卡與卡片收藏</span><span>限時活動與抽獎</span><span>每日簽到與等級</span><span>成員名單</span><span>歡迎訊息與自動身分組</span><span>防洗頻與防詐騙</span><span>數數字遊戲</span><span>真心話大冒險</span><span>節日通知</span><span>伺服器互動</span>
+                    </div>
+                </section>
+
+                <section class="glass-card wiki-section" id="getting-started">
+                    <div class="wiki-section__heading">
+                        <div>
+                            <p class="page-kicker">GETTING STARTED</p>
+                            <h2>新手開始</h2>
+                        </div>
+                        <i data-lucide="list-steps" aria-hidden="true"></i>
+                    </div>
+                    <div class="wiki-step-list">
+                        <div class="wiki-step">
+                            <span class="wiki-step__number">01</span>
+                            <div><h3>把 MJ helper 加入伺服器</h3><p>邀請 Bot 進入伺服器後，請確認它有正常顯示在線上。</p></div>
+                        </div>
+                        <div class="wiki-step">
+                            <span class="wiki-step__number">02</span>
+                            <div><h3>確認必要權限</h3><p>部分功能需要管理員權限或額外的 Discord 權限，例如管理身分組、管理頻道、管理訊息、禁言或停權成員、讀取訊息內容與讀取成員資料。</p></div>
+                        </div>
+                        <div class="wiki-step">
+                            <span class="wiki-step__number">03</span>
+                            <div><h3>查看功能</h3><p>在伺服器輸入 <code>/help</code>，Bot 會顯示功能分類和常用指令。</p></div>
+                        </div>
+                        <div class="wiki-step">
+                            <span class="wiki-step__number">04</span>
+                            <div><h3>先設定伺服器功能</h3><p>管理員可以依照需求設定 <code>/歡迎面板</code>、<code>/加入自動身分組</code>、<code>/防護功能</code>、<code>/防護診斷</code>、<code>/機器人更新</code>、<code>/音樂權限</code>、<code>/抽卡設定</code> 與 <code>/節日通知</code>。</p></div>
+                        </div>
+                    </div>
+                    <p class="wiki-note">不同伺服器的設定和資料會分開保存，不會互相影響。</p>
+                </section>
+
+                <section class="glass-card wiki-section" id="commands">
+                    <div class="wiki-section__heading">
+                        <div>
+                            <p class="page-kicker">COMMAND REFERENCE</p>
+                            <h2>指令總覽</h2>
+                        </div>
+                        <i data-lucide="terminal-square" aria-hidden="true"></i>
+                    </div>
+                    <div class="wiki-command-groups">
+                        <div class="wiki-command-group"><h3>一般功能</h3><ul>
+                            <li><code>/等級</code>：查看自己或其他成員的等級</li>
+                            <li><code>/排行榜</code>：查看伺服器等級排行榜</li>
+                            <li><code>/簽到日</code>：查看本月簽到日期與連續簽到天數</li>
+                            <li><code>/伺服器今日統計</code>：查看伺服器今天的活動統計</li>
+                            <li><code>/伺服器每日任務</code>：查看每天的伺服器共同任務</li>
+                            <li><code>/設定生日</code>：設定自己的生日</li>
+                            <li><code>/節日通知</code>：管理節日與放假提醒</li>
+                        </ul></div>
+                        <div class="wiki-command-group"><h3>音樂功能</h3><ul>
+                            <li><code>/play</code>：播放 YouTube、YouTube Music 或 Spotify 連結</li>
+                            <li><code>/暫停</code>、<code>/繼續</code>：控制播放狀態</li>
+                            <li><code>/跳過</code>、<code>/停止</code>：控制歌曲與播放佇列</li>
+                            <li><code>/離開</code>：讓 Bot 離開語音頻道</li>
+                            <li><code>/佇列</code>、<code>/目前播放</code>：查看播放資訊</li>
+                            <li><code>/音量</code>：設定播放音量</li>
+                            <li><code>/音樂權限</code>：設定 DJ 身分組或恢復所有人控制</li>
+                        </ul></div>
+                        <div class="wiki-command-group"><h3>娛樂功能</h3><ul>
+                            <li><code>/抽卡</code>：抽取收藏卡片</li>
+                            <li><code>/抽卡圖鑑</code>：查看卡片收藏進度</li>
+                            <li><code>/抽卡背包</code>：查看擁有的卡片與碎片</li>
+                            <li><code>/抽卡排行</code>：查看伺服器抽卡排行榜</li>
+                            <li><code>/結婚請求</code>：向其他成員發送娛樂用結婚請求</li>
+                            <li><code>/gay指數</code>：查看娛樂用測驗結果</li>
+                            <li><code>/真心話大冒險</code>：抽出真心話或大冒險題目</li>
+                            <li><code>/數數字頻道</code>、<code>/數數字模式</code>：設定數數字遊戲</li>
+                        </ul></div>
+                        <div class="wiki-command-group"><h3>管理功能</h3><ul>
+                            <li><code>/考核紀錄</code>、<code>/懲罰紀錄</code>：記錄考核與伺服器處分資料</li>
+                            <li><code>/公告</code>：發布伺服器公告</li>
+                            <li><code>/建立抽獎</code>、<code>/結束抽獎</code>、<code>/取消抽獎</code>：管理抽獎活動</li>
+                            <li><code>/抽獎列表</code>、<code>/抽獎參加者</code>：查看抽獎狀態</li>
+                            <li><code>/建立活動</code>、<code>/活動加入成員</code>：建立與管理限時活動</li>
+                            <li><code>/活動列表</code>、<code>/活動報名者</code>：查看活動資訊</li>
+                            <li><code>/設置名單</code>、<code>/新增成員</code>、<code>/編輯成員</code>：管理成員名單</li>
+                            <li><code>/查詢成員</code>、<code>/名單統計</code>、<code>/名單權限</code>：查詢與設定名單</li>
+                            <li><code>/歡迎面板</code>、<code>/加入自動身分組</code>：管理歡迎與身分組</li>
+                            <li><code>/防護功能</code>、<code>/防護診斷</code>：設定與檢查伺服器防護</li>
+                            <li><code>/機器人更新</code>、<code>/抽卡設定</code>：管理更新頻道與抽卡次數</li>
+                        </ul></div>
+                        <div class="wiki-command-group wiki-command-group--owner"><h3>Bot 擁有者功能</h3><ul>
+                            <li><code>/更新發布</code>：將更新公告發布到所有已開啟的更新頻道</li>
+                            <li><code>/狀態</code>：管理 Bot 狀態文字</li>
+                            <li><code>/重啟</code>：重新啟動 Bot</li>
+                        </ul></div>
+                    </div>
+                </section>
+
+                <section class="glass-card wiki-section" id="music">
+                    <div class="wiki-section__heading"><div><p class="page-kicker">MUSIC SYSTEM</p><h2>音樂系統</h2></div><i data-lucide="music-2" aria-hidden="true"></i></div>
+                    <p>使用 <code>/play</code> 播放 YouTube、YouTube Music 或 Spotify 連結。</p>
+                    <div class="wiki-columns"><div><h3>支援內容</h3><ul class="wiki-list"><li>YouTube 單曲與播放清單</li><li>YouTube Music 專輯</li><li>Spotify 歌曲、專輯與歌單</li><li>播放佇列</li><li>暫停、繼續、跳過和停止</li><li>自訂音量</li><li>播放失敗自動重試</li></ul></div><div class="wiki-note"><h3>Spotify 連結說明</h3><p>Spotify 連結會先讀取歌曲名稱和藝人，再尋找公開的 YouTube 對應歌曲播放。實際播放的是 YouTube 音訊，不是直接播放 Spotify 音訊。</p></div></div>
+                </section>
+
+                <section class="glass-card wiki-section" id="cards">
+                    <div class="wiki-section__heading"><div><p class="page-kicker">CARD COLLECTION</p><h2>抽卡系統</h2></div><i data-lucide="layers-3" aria-hidden="true"></i></div>
+                    <p>使用 <code>/抽卡</code> 抽取收藏卡片。目前共有 60 張卡片，分成普通、稀有、超稀有、傳說和神話等級。</p>
+                    <ul class="wiki-list wiki-list--inline"><li><code>/抽卡圖鑑</code>：查看收藏進度</li><li><code>/抽卡背包</code>：查看擁有的卡片和碎片</li><li><code>/抽卡排行</code>：查看伺服器排行榜</li><li><code>/抽卡設定</code>：由管理員設定每天免費抽卡次數</li></ul>
+                    <p>抽到重複卡片時，會自動轉換成卡片碎片。預設每位成員每天可以抽 1 次，管理員可以使用 <code>/抽卡設定</code> 調整為每天 1～10 次。</p>
+                    <pre class="wiki-command-block"><code>/抽卡設定 每日次數:5</code></pre>
+                    <p>設定後，每位成員每天可以免費抽 5 次。這項設定只影響目前伺服器，不會重置既有卡片、碎片或保底進度。</p>
+                </section>
+
+                <section class="glass-card wiki-section" id="events">
+                    <div class="wiki-section__heading"><div><p class="page-kicker">EVENTS & GIVEAWAYS</p><h2>活動與抽獎</h2></div><i data-lucide="party-popper" aria-hidden="true"></i></div>
+                    <p>管理員可以建立限時活動，設定活動名稱、活動說明、活動時間，以及可以參加的身分組。</p>
+                    <div class="wiki-columns"><div><h3>成員可以</h3><ul class="wiki-list"><li>報名活動</li><li>退出活動</li><li>查看自己的報名狀態</li></ul></div><div><h3>活動結束後</h3><p>Bot 會在原本的頻道公告結果，並私訊已報名的成員。管理員也可以使用 <code>/活動加入成員</code>，手動加入符合身分組資格的成員。</p></div></div>
+                </section>
+
+                <section class="glass-card wiki-section" id="levels">
+                    <div class="wiki-section__heading"><div><p class="page-kicker">CHECK-IN & LEVELS</p><h2>簽到與等級</h2></div><i data-lucide="calendar-check-2" aria-hidden="true"></i></div>
+                    <p>MJ helper 會記錄成員的每日簽到、連續簽到、聊天 XP 和語音 XP。</p>
+                    <ul class="wiki-list wiki-list--columns"><li>每日簽到</li><li>連續簽到</li><li>離線期間連勝保護</li><li>聊天 XP</li><li>語音 XP</li><li>等級排行榜</li><li>升等通知</li><li>等級獎勵身分組</li><li>伺服器每日任務</li></ul>
+                    <p class="wiki-note">Bot 離線期間不會把離線日期誤算成新的簽到，但會依照既有規則保留符合條件的連勝。</p>
+                </section>
+
+                <section class="glass-card wiki-section" id="members">
+                    <div class="wiki-section__heading"><div><p class="page-kicker">MEMBER DIRECTORY</p><h2>成員名單</h2></div><i data-lucide="contact-round" aria-hidden="true"></i></div>
+                    <p>MJ MEMBER 名單功能可以用來管理伺服器成員資料。</p>
+                    <ul class="wiki-list wiki-list--columns"><li>設定名單頻道和標題</li><li>新增、編輯或移除成員</li><li>設定 Roblox ID 必填或選填</li><li>建立和管理分組</li><li>設定查看者和編輯者身分組</li><li>查詢成員</li><li>查看名單統計</li><li>匯入或匯出資料</li><li>查看名單操作紀錄</li></ul>
+                    <p class="wiki-note">每個伺服器的名單資料分開保存，不會與其他伺服器混用。</p>
+                </section>
+
+                <section class="glass-card wiki-section" id="welcome">
+                    <div class="wiki-section__heading"><div><p class="page-kicker">WELCOME & ROLES</p><h2>歡迎與自動身分組</h2></div><i data-lucide="user-plus" aria-hidden="true"></i></div>
+                    <p>管理員可以使用 <code>/歡迎面板</code> 設定新成員加入訊息、成員離開訊息、通知頻道、Embed 顏色、歡迎圖片與新成員私訊。</p>
+                    <p>如果希望新成員加入後自動取得身分組，可以使用：</p>
+                    <pre class="wiki-command-block"><code>/加入自動身分組</code></pre>
+                    <p>設定時需要指定身分組。Bot 的身分組必須高於要給予的新成員身分組，並且需要「管理身分組」權限。不能指定 @everyone，也不能指定由其他機器人或整合管理的身分組。</p>
+                </section>
+
+                <section class="glass-card wiki-section" id="protection">
+                    <div class="wiki-section__heading"><div><p class="page-kicker">SERVER PROTECTION</p><h2>防護功能</h2></div><i data-lucide="shield-alert" aria-hidden="true"></i></div>
+                    <p>管理員可以使用 <code>/防護功能</code> 設定防護項目：</p>
+                    <ul class="wiki-list wiki-list--columns"><li>防洗頻</li><li>重複訊息偵測</li><li>@everyone 和 @here 偵測</li><li>邀請連結偵測</li><li>詐騙訊息偵測</li><li>詐騙隔離頻道</li><li>自動刪除訊息</li><li>禁言或停權處分</li></ul>
+                    <p>如果防護沒有正常運作，先使用 <code>/防護診斷</code> 查看 Bot 是否缺少權限或 Discord Intent。</p>
+                    <p class="wiki-note">詐騙隔離頻道偵測到可疑成員時，可以通知伺服器擁有者。通知不會包含完整的可疑訊息內容，避免把可疑內容再次散播出去。</p>
+                </section>
+
+                <section class="glass-card wiki-section" id="other">
+                    <div class="wiki-section__heading"><div><p class="page-kicker">OTHER INTERACTIONS</p><h2>其他功能</h2></div><i data-lucide="gamepad-2" aria-hidden="true"></i></div>
+                    <div class="wiki-columns"><div><h3>真心話大冒險</h3><ul class="wiki-list"><li>可以自己抽出真心話或大冒險題目</li><li>可以指定其他成員接受挑戰</li><li>對方可以接受或拒絕</li></ul></div><div><h3>數數字</h3><ul class="wiki-list"><li>成員依序輸入正確數字</li><li>輸入錯誤時會提示正確數字並重置</li><li>可以使用共用頻道或私人數數字頻道</li></ul></div></div>
+                    <div class="wiki-note"><h3>節日通知</h3><p>管理員可以設定通知頻道，Bot 會檢查台灣節日，通知會標示依政府行事曆是否放假。</p></div>
+                </section>
+
+                <section class="glass-card wiki-section" id="faq">
+                    <div class="wiki-section__heading"><div><p class="page-kicker">FAQ</p><h2>常見問題</h2></div><i data-lucide="circle-help" aria-hidden="true"></i></div>
+                    <div class="wiki-faq">
+                        <details open><summary>為什麼新指令看不到？</summary><p>修改功能後，需要由 Bot 擁有者自行執行 <code>/重啟</code>。重新啟動後，新的指令才會載入。</p></details>
+                        <details><summary>為什麼自動身分組沒有發出去？</summary><p>請確認 Bot 有「管理身分組」權限、Bot 的身分組位於目標身分組上方、目標身分組不是 @everyone，也不是其他機器人或整合管理的身分組，並確認 Discord Developer Portal 已開啟 <code>Server Members Intent</code>。</p></details>
+                        <details><summary>為什麼 Spotify 不能直接播放？</summary><p>Spotify 連結不是直接轉送 Spotify 音訊。MJ helper 會讀取 Spotify 的歌曲資料，再找公開的 YouTube 對應歌曲播放，避免下載、轉發或繞過 Spotify 的音訊限制。</p></details>
+                        <details><summary>每個伺服器的設定會不會互相影響？</summary><p>不會。名單、活動、防護、抽卡、音樂權限、歡迎設定和其他伺服器資料都會依伺服器分開保存。</p></details>
+                        <details><summary>Bot 沒有反應怎麼辦？</summary><p>請先確認 Bot 是否在線、Bot 是否有目前頻道的查看／讀取／發送訊息權限、指令是否輸入正確、該功能是否需要管理員權限，以及防護、歡迎或音樂功能是否缺少額外 Discord 權限。</p></details>
+                    </div>
+                </section>
+
+                <section class="glass-card wiki-section wiki-section--footer-note" id="wiki-footer">
+                    <i data-lucide="refresh-cw" aria-hidden="true"></i>
+                    <h2>Wiki 會持續更新</h2>
+                    <p>本 Wiki 會隨 MJ helper 功能更新。如果遇到問題，請先確認指令名稱是否正確、Bot 是否在線、Bot 是否有需要的 Discord 權限，以及是否需要重新執行 <code>/重啟</code>。</p>
+                    <p>由 1NotAmon 製作與維護。</p>
+                    <a href="https://mjclan.github.io/MJ/" target="_blank" rel="noopener noreferrer">MJ Clan 官方網站</a>
+                </section>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-links">
+                <a href="index.html">首頁</a>
+                <a href="assessment.html">考核規則</a>
+                <a href="system.html">系統介紹</a>
+                <a href="partnership.html">合作規範</a>
+                <a href="statistics.html">統計資料</a>
+                <a href="bot.html">MJ helper</a>
+            </div>
+            <p class="copyright">&copy; 2026 MJ Clan. MJ helper Wiki.</p>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>

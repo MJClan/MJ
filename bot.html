@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MJ helper 是 MJ Clan 的團長自己製作和維護的 Discord Bot，提供音樂、抽卡、活動、簽到、管理與伺服器防護功能。">
+    <link rel="canonical" href="https://mjclan.github.io/MJ/bot.html">
+    <title>MJ helper | MJ Clan Discord Bot</title>
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="MJ Clan">
+    <meta property="og:locale" content="zh_TW">
+    <meta property="og:title" content="MJ helper | MJ Clan Discord Bot">
+    <meta property="og:description" content="MJ Clan 的團長自己製作和維護的 Discord Bot，提供音樂、抽卡、活動、簽到、管理與伺服器防護功能。">
+    <meta property="og:url" content="https://mjclan.github.io/MJ/bot.html">
+    <meta property="og:image" content="https://mjclan.github.io/MJ/IMG_3083.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="960">
+    <meta property="og:image:height" content="907">
+    <meta property="og:image:alt" content="MJ Clan Logo">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="MJ helper | MJ Clan Discord Bot">
+    <meta name="twitter:description" content="MJ Clan 的團長自己製作和維護的 Discord Bot。">
+    <meta name="twitter:image" content="https://mjclan.github.io/MJ/IMG_3083.png">
+    <link rel="icon" type="image/png" href="IMG_3083.png" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+TC:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest" defer></script>
+</head>
+<body>
+    <div class="ambient-background" aria-hidden="true">
+        <span class="ambient-grid"></span>
+        <span class="ambient-stars"></span>
+        <span class="ambient-orb ambient-orb--one"></span>
+        <span class="ambient-orb ambient-orb--two"></span>
+        <span class="ambient-orb ambient-orb--three"></span>
+    </div>
+    <div class="page-loader" aria-label="頁面載入中">
+        <div class="page-loader__inner">
+            <div class="page-loader__mark">MJ</div>
+            <div class="page-loader__line"><span></span></div>
+            <div class="page-loader__label">LOADING EXPERIENCE</div>
+        </div>
+    </div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="IMG_3083.png" alt="MJ Clan Logo" width="960" height="907" decoding="async">
+                MJ Clan
+            </a>
+            <button class="mobile-menu-btn" aria-label="開啟選單" aria-expanded="false">
+                <i data-lucide="menu"></i>
+            </button>
+            <div class="nav-links">
+                <a href="index.html">首頁</a>
+                <a href="assessment.html">考核</a>
+                <a href="system.html">系統</a>
+                <a href="partnership.html">合作</a>
+                <a href="statistics.html">統計</a>
+                <a href="bot.html" aria-current="page">機器人</a>
+                <a href="discordlink.html" class="nav-cta">加入 Discord</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="page-main bot-page">
+        <section class="container bot-hero">
+            <div class="bot-hero__icon"><img src="bot.gif" alt="MJ helper Bot 頭像" width="96" height="96" decoding="async"></div>
+            <p class="page-kicker">MJ CLAN / DISCORD BOT</p>
+            <h1 class="page-title">MJ helper</h1>
+            <p class="bot-hero__subtitle">MJ Clan 的團長自己製作和維護的 Discord Bot</p>
+            <p class="page-lead">MJ helper 是 MJ Clan 的團長自己製作和維護的 Discord Bot，主要拿來處理伺服器管理、日常互動和一些娛樂功能。</p>
+            <p class="bot-hero__description">它不是只有單一用途，平常可以拿來聽音樂、抽卡、參加活動，也能協助管理伺服器和保護頻道。</p>
+        </section>
+
+        <section class="container bot-features-section">
+            <div class="bot-section-heading">
+                <p class="page-kicker">WHAT MJ HELPER CAN DO</p>
+                <h2 class="section-title">目前提供的功能</h2>
+            </div>
+            <div class="bot-feature-grid">
+                <article class="bento-item bot-feature-card" data-tilt>
+                    <i data-lucide="music-2" class="icon"></i>
+                    <h3>音樂</h3>
+                    <p>播放 YouTube、YouTube Music，也支援 Spotify 連結對應公開 YouTube 音源播放。</p>
+                </article>
+                <article class="bento-item bot-feature-card" data-tilt>
+                    <i data-lucide="layers-3" class="icon"></i>
+                    <h3>抽卡</h3>
+                    <p>收集 60 張不同卡片，重複卡片可以換成碎片。</p>
+                </article>
+                <article class="bento-item bot-feature-card" data-tilt>
+                    <i data-lucide="party-popper" class="icon"></i>
+                    <h3>活動與抽獎</h3>
+                    <p>建立限時活動、設定參加資格、抽獎和中獎通知。</p>
+                </article>
+                <article class="bento-item bot-feature-card" data-tilt>
+                    <i data-lucide="calendar-check-2" class="icon"></i>
+                    <h3>簽到與等級</h3>
+                    <p>每日簽到、連續簽到、聊天 XP、語音 XP 和等級排行榜。</p>
+                </article>
+                <article class="bento-item bot-feature-card bot-feature-card--featured" data-tilt>
+                    <i data-lucide="shield-check" class="icon"></i>
+                    <h3>伺服器管理</h3>
+                    <p>成員名單、考核紀錄、懲罰紀錄、公告和身分組管理。</p>
+                </article>
+                <article class="bento-item bot-feature-card" data-tilt>
+                    <i data-lucide="user-plus" class="icon"></i>
+                    <h3>歡迎功能</h3>
+                    <p>新成員加入通知、離開通知、加入私訊和自動給予身分組。</p>
+                </article>
+                <article class="bento-item bot-feature-card" data-tilt>
+                    <i data-lucide="shield-alert" class="icon"></i>
+                    <h3>防護功能</h3>
+                    <p>防洗頻、重複訊息、詐騙訊息、惡意提及和邀請連結偵測。</p>
+                </article>
+                <article class="bento-item bot-feature-card" data-tilt>
+                    <i data-lucide="gamepad-2" class="icon"></i>
+                    <h3>其他互動</h3>
+                    <p>真心話大冒險、數數字、結婚請求、Gay 指數和節日通知。</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="container bot-usage-grid">
+            <article class="glass-card bot-usage-card">
+                <div class="bot-panel-heading">
+                    <div>
+                        <p class="page-kicker">HOW TO USE</p>
+                        <h2>怎麼使用？</h2>
+                    </div>
+                    <i data-lucide="terminal" aria-hidden="true"></i>
+                </div>
+                <p>把 MJ helper 加入伺服器後，可以輸入以下指令查看目前可以使用的功能：</p>
+                <pre class="bot-command"><code>/help</code></pre>
+                <p>每個伺服器的設定和資料都是分開保存的，所以不同伺服器可以使用不同的名單、活動、防護和音樂設定。</p>
+            </article>
+
+            <article class="glass-card bot-usage-card bot-usage-card--join">
+                <div class="bot-panel-heading">
+                    <div>
+                        <p class="page-kicker">READY TO TRY?</p>
+                        <h2>想試試看？</h2>
+                    </div>
+                    <i data-lucide="rocket" aria-hidden="true"></i>
+                </div>
+                <p>如果你想讓 MJ helper 加入你的 Discord 伺服器，可以從這裡開始：</p>
+                <a class="btn btn-main bot-invite-button" href="https://discord.com/oauth2/authorize?client_id=1550747467002290276" target="_blank" rel="noopener noreferrer">將 MJ helper 加入伺服器!</a>
+                <a class="btn btn-secondary" href="discordlink.html">前往 Discord 詢問</a>
+                <div class="bot-wiki-link">
+                    <p>需要完整的指令與設定說明？</p>
+                    <a class="btn btn-secondary" href="wiki.html">開啟 MJ helper Wiki <i data-lucide="book-open"></i></a>
+                </div>
+            </article>
+        </section>
+
+        <section class="container bot-permission-note">
+            <div class="bento-item card-featured" data-tilt>
+                <i data-lucide="info" class="icon"></i>
+                <h3>使用提醒</h3>
+                <p>有些功能需要管理員權限或額外設定，加入後輸入 <code>/help</code> 就可以查看詳細使用方式。</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-links">
+                <a href="index.html">首頁</a>
+                <a href="assessment.html">考核規則</a>
+                <a href="system.html">系統介紹</a>
+                <a href="partnership.html">合作規範</a>
+                <a href="statistics.html">統計資料</a>
+                <a href="bot.html">MJ helper</a>
+            </div>
+            <p class="copyright">&copy; 2026 MJ Clan. Built with MJ helper.</p>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
