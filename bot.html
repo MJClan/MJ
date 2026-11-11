@@ -1,15 +1,45 @@
-﻿<!DOCTYPE html>
-<html lang="zh-TW">
+<!DOCTYPE html>
+<html lang="zh-Hant">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 1. 透過 Meta 標籤設定 0 秒立即跳轉 -->
     <meta http-equiv="refresh" content="0;url=https://mjhelper.cc.cd">
-    <title>MJ</title>
-    <link rel="icon" type="image/png" href="IMG_3083.png" />
+    <title>網頁跳轉中...</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        .container {
+            text-align: center;
+            padding: 20px;
+        }
+        a {
+            color: #5865F2;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    <script>
+        // 2. 透過 JavaScript 備援，確保在 Meta 標籤失效時也能立即跳轉
+        window.location.href = "https://mjhelper.cc.cd";
+    </script>
 </head>
 <body>
-    <script>
-        window.location.replace("https://mjhelper.cc.cd");
-    </script>
+    <div class="container">
+        <h2>正在為您導向至 MJ helper...</h2>
+        <p>如果網頁沒有自動跳轉，請點擊下方連結：</p>
+        <p><a href="https://mjhelper.cc.cd">👉 立即前往 MJ helper</a></p>
+    </div>
 </body>
 </html>
